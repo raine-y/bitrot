@@ -1,0 +1,2 @@
+# bitrot
+₊ ⊹ . ݁˖ . ݁ ASCII Tarot Deck . ݁₊ ⊹ . 
