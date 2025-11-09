@@ -1,6 +1,6 @@
 # bitrot
 
-₊ ⊹ . ݁˖ . ݁ ASCII Tarot Deck . ݁₊ ⊹ .
+⊹ An ASCII Tarot Deck . ݁₊ ⊹ .
 
 ## Description
 
