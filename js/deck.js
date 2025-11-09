@@ -19,7 +19,7 @@ function generateDeck() {
         for (r = 0; r < rLength; r++) {
             let rank = ranks[r];
             let suit = suits[s];
-            let card = rank +  " of " + suit;
+            let card = rank + " of " + suit;
             deck.push(card);
         }
     }
@@ -33,8 +33,8 @@ function generateDeck() {
 
 function shuffleDeck(d) {  // Fisher-Yates style (for effect)
     for (let i = d.length - 1; i > 0; i--) {
-    	const s = Math.floor(Math.random() * (i + 1));
-    	[d[i], d[s]] = [d[s], d[i]];
-  	}
-  	return d;
+        const s = Math.floor(Math.random() * (i + 1));
+        [d[i], d[s]] = [d[s], d[i]];
+    }
+    return d;
 }

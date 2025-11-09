@@ -3,28 +3,28 @@ const { app, BrowserWindow } = require('electron/main')
 const path = require('node:path')
 
 const createWindow = () => {
-  const win = new BrowserWindow({
-    titleBarStyle: 'hidden',
-    ...(process.platform !== 'darwin' ? { titleBarOverlay: true } : {}),
-    width: 875,
-    height: 575,
-  })
+    const win = new BrowserWindow({
+        titleBarStyle: 'hidden',
+        ...(process.platform !== 'darwin' ? { titleBarOverlay: true } : {}),
+        width: 910,
+        height: 565,
+    })
 
-  win.loadFile('index.html')
+    win.loadFile('index.html')
 }
 
 app.whenReady().then(() => {
-  createWindow()
+    createWindow()
 
-  app.on('activate', () => {
-    if (BrowserWindow.getAllWindows().length === 0) {
-      createWindow()
-    }
-  })
+    app.on('activate', () => {
+        if (BrowserWindow.getAllWindows().length === 0) {
+            createWindow()
+        }
+    })
 })
 
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
-    app.quit()
-  }
+    if (process.platform !== 'darwin') {
+        app.quit()
+    }
 })

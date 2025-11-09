@@ -9,6 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   app-region: drag;
+  border-bottom: solid 3px #2d2d2d;
 }
 .titlebar > h1 {
   font-family: 'cutive';
