@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'jersey15';
+    src: url("../fonts/jersey_15/jersey15-Regular.ttf");
+}
+@font-face {
+    font-family: 'jersey10';
+    src: url("../fonts/jersey_10/Jersey10-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'cutive';
+    src: url('../fonts/cutive_mono/CutiveMono-Regular.ttf');
+}

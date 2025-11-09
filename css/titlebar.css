@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+
+.titlebar {
+  height: 30px;
+  background: #171716;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  app-region: drag;
+}
+.titlebar > h1 {
+  font-family: 'cutive';
+  color: white;
+  font-size: .9rem;
+}
