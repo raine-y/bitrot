@@ -4,6 +4,7 @@ const path = require('node:path')
 
 const createWindow = () => {
     const win = new BrowserWindow({
+        resizable: false,
         titleBarStyle: 'hidden',
         ...(process.platform !== 'darwin' ? { titleBarOverlay: true } : {}),
         width: 910,
