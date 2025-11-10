@@ -1,17 +1,97 @@
 body {
   margin: 0;
   background: #171716;
+  user-select: none;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 33px);
-    width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 33px);
+  width: 100vw;
+  font-family: "cutive";
 }
 
 #titleCard {
+  color: whitesmoke;
+  font-weight: 500;
+  margin-bottom: -15px;
+}
+
+#menu {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+h2 {
+  color: rgb(192, 192, 192);
+  margin: 0px;
+  margin-bottom: 45px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: .9rem;
+  letter-spacing: 0.2rem;
+}
+
+button {
+  background: #2d2d2d;
+  border: none;
+  color: whitesmoke;
+  font-family: 'cutive';
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.4s, color 0.4s;
+}
+
+button:hover {
+  background: whitesmoke;
+  color: #161615;
+}
+
+
+
+#radioDoom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  margin-right: 5px;
+  margin-top: -5px;
+}
+
+#radioDoom > label {
     color: whitesmoke;
+}
+
+input[type='radio'] {
+  box-sizing: border-box;
+  appearance: none;
+  background: whitesmoke;
+  outline: 1px solid #161615;
+  border: 2px solid whitesmoke;
+  width: 13px;
+  height: 13px;
+}
+
+input[type='radio']:checked {
+  background: #333;
+}
+
+#menu > p {
+  margin: 0px;
+  margin-top: -10px;
+  color: rgb(173, 173, 173);
+  justify-self: center;
+  align-self: center;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+#bold {
+  font-weight: 600;
 }

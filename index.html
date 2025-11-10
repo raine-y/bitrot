@@ -20,8 +20,8 @@
     <!-- TITLE BAR -->
     <div class="titlebar">
       <h1>bitrot: An ASCII Tarot Deck</h1>
-      </div>
-      <!--
+    </div>
+    <!--
         TODO:
         - JS animation pixel splash screen
         - Menu
@@ -31,40 +31,30 @@
         - Do you feel doomed? (Include Reverses) 
         - Save results
         -->
-        <main>
-        <pre id="titleCard">
-:::::::.  ::::::::::::::::::::::..       ...   ::::::::::::
- ;;;'';;' ;;;;;;;;;;;'''';;;;``;;;;   .;;;;;;;.;;;;;;;;''''
- [[[__[[\.[[[     [[      [[[,/[[['  ,[[     \[[,   [[     
- $$""""Y$$$$$     $$      $$$$$$c    $$$,     $$$   $$     
-_88o,,od8P888     88,     888b "88bo,"888,_ _,88P   88,    
-""YUMMMP" MMM     MMM     MMMM   "W"   "YMMMMMP"    MMM   
-
-      
-                                             
+    <main>
+      <pre id="titleCard">                     
  ,,        ,,                                
-*MM        db   mm                     mm    
+*M;        db   mm                     mm    
  MM             MM                     MM    
- MM,dMMb.`7MM mmMMmm `7Mb,od8 ,pW"Wq.mmMMmm  
- MM    `Mb MM   MM     MM' "'6W'   `Wb MM    
- MM     M8 MM   MM     MM    8M     M8 MM    
- MM.   ,M9 MM   MM     MM    YA.   ,A9 MM    
- P^YbmdP'.JMML. `Mbmo.JMML.   `Ybmd9'  `Mbmo 
-                                             
-                                             
-                                                      
-@@@@@@@   @@@  @@@@@@@  @@@@@@@    @@@@@@   @@@@@@@  
-@@@@@@@@  @@@  @@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@  
-@@!  @@@  @@!    @@!    @@!  @@@  @@!  @@@    @@!    
-!@   @!@  !@!    !@!    !@!  @!@  !@!  @!@    !@!    
-@!@!@!@   !!@    @!!    @!@!!@!   @!@  !@!    @!!    
-!!!@!!!!  !!!    !!!    !!@!@!    !@!  !!!    !!!    
-!!:  !!!  !!:    !!:    !!: :!!   !!:  !!!    !!:    
-:!:  !:!  :!:    :!:    :!:  !:!  :!:  !:!    :!:    
- :: ::::   ::     ::    ::   :::  ::::: ::     ::    
-:: : ::   :       :      :   : :   : :  :      :     
-                                                     
+ MM,dMMb.`7MM mmM:m. `7Mb,od8 ,pW"Wq.mm#Mmm 
+ :M    `!b MM   MM     @M' "'6W'   `!b MM    
+ M!     :8 M!   :M     !!    8|     !8 M!    
+ !:.   ,;! !:   #!     !:    \:.   ,:; !:    
+ !^\;:;;`.;:!\. `\!#;.;::.    `!!::9'  `\:;,
+                                
         </pre>
-        </main>
+        <h2>
+          ASCII Tarot Deck
+        </h2>
+        <div id="menu">
+          <button id="drawButton">past_present_future</button>
+          <button id="freeDrawButton">free_draw</button>
+          <div id="radioDoom">
+              <input type="radio" id="rverseCheck" onclick="return false;">
+              <label for="reverseCheck"><span id="bold">[!]</span> Do You Ever Feel Doomed?</label>
+          </div>
+          <p>(Include Reverses)</p>
+        </div>
+    </main>
   </body>
 </html>

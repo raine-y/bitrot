@@ -26,9 +26,6 @@ function generateDeck() {
 
     shuffleDeck(deck);
 
-    console.log(deck);
-    console.log(deck.length);
-
 }
 
 function shuffleDeck(d) {  // Fisher-Yates style (for effect)
