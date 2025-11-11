@@ -18,6 +18,8 @@ main {
   color: whitesmoke;
   font-weight: 500;
   margin-bottom: -15px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 #menu {
@@ -29,7 +31,7 @@ main {
 h2 {
   color: rgb(192, 192, 192);
   margin: 0px;
-  margin-bottom: 45px;
+  margin-bottom: 55px;
   font-style: italic;
   font-weight: 400;
   font-size: .9rem;

@@ -4,6 +4,9 @@ const path = require('node:path')
 
 const createWindow = () => {
     const win = new BrowserWindow({
+        webPreferences: {
+            preload: path.join(__dirname, 'preload.js')
+        },
         resizable: false,
         titleBarStyle: 'hidden',
         ...(process.platform !== 'darwin' ? { titleBarOverlay: true } : {}),
