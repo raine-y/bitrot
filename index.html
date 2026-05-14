@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -13,8 +13,6 @@
     <link href="./css/index.css" rel="stylesheet" />
     <link href="./css/titlebar.css" rel="stylesheet" />
     <link href="./css/fonts.css" rel="stylesheet" />
-    <script src="./js/titleCard.js" defer></script>
-    <script src="./js/doomShake.js" defer></script>
     <title>bitrot</title>
   </head>
   <body>
@@ -48,10 +46,10 @@
       >
       <h2>ASCII Tarot Deck</h2>
       <div id="menu">
-        <button id="drawButton">past_present_future</button>
-        <button id="freeDrawButton">free_draw</button>
+        <button class="button" id="drawButton">past_present_future</button>
+        <button class="button" id="freeDrawButton">free_draw</button>
         <div id="radioDoom">
-          <input type="checkbox" id="reverseCheck"/>
+          <input type="checkbox" id="reverseCheck" />
           <label for="reverseCheck"
             ><span id="bold">[!]</span> Do You Ever Feel Doomed?</label
           >
@@ -61,4 +59,5 @@
     </main>
   </body>
   <script src="./js/renderer.js"></script>
+  <script src="./js/route.js"></script>
 </html>

@@ -34,7 +34,7 @@ h2 {
   margin-bottom: 55px;
   font-style: italic;
   font-weight: 400;
-  font-size: .9rem;
+  font-size: 0.9rem;
   letter-spacing: 0.2rem;
 }
 
@@ -42,19 +42,19 @@ button {
   background: #2d2d2d;
   border: none;
   color: whitesmoke;
-  font-family: 'cutive';
+  font-family: "cutive";
   font-size: 1.1rem;
   padding: 5px 10px;
   cursor: pointer;
-  transition: background 0.4s, color 0.4s;
+  transition:
+    background 0.4s,
+    color 0.4s;
 }
 
 button:hover {
-  background: whitesmoke;
+  background: rgb(207, 207, 207);
   color: #161615;
 }
-
-
 
 #radioDoom {
   display: flex;
@@ -67,10 +67,10 @@ button:hover {
 }
 
 #radioDoom > label {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   box-sizing: border-box;
   appearance: none;
   background: whitesmoke;
@@ -81,7 +81,7 @@ input[type='checkbox'] {
   cursor: pointer;
 }
 
-input[type='checkbox']:checked {
+input[type="checkbox"]:checked {
   background: #333;
 }
 
@@ -99,21 +99,37 @@ input[type='checkbox']:checked {
   font-weight: 600;
 }
 
-.shake {
-  animation: shake 0.5s;
-  animation-timing-function: ease-in-out;
+body.animate {
+  overflow: hidden;
+}
+.animate #shakeMe {
+  transform: scale(1.2);
+}
+body.animate {
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  10%,
+  90% {
+    transform: translate3d(-1px, 2px, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 5px, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 10px, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
